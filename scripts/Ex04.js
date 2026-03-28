@@ -1,12 +1,15 @@
 function ordem() {
 
+     vetnum = [];
+
     for (let i = 1; i <= 4; i++) {
-        let vet = [i];
+       
 
-        vet = parseFloat(prompt("Informe o valor " + i));
-
-        console.log(vet);
+        vetnum.push(Number(prompt("Informe o valor " + i)));
+        vetnum.sort((a, b) => b - a);
     }
 
-    
+    alert("Seus números em ordem decrescente são: " + "\n" + vetnum);
+
 }
+

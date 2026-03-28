@@ -10,7 +10,7 @@ function faixa() {
 
         alert("Informações do usuário:" + "\nSalário bruto: " + sal + "\nTaxa de desconto: " + taxa + "\nValor do desconto: " + liq + "\nSalário líquido: " + desc);
 
-    } else if (sal > 1000 || sal < 1500) {
+    } else if (sal > 1000 && sal <= 1500) {
         let taxa = 8.5;
         let desc = sal - (sal * taxa) / 100;
         let liq = sal - desc;
